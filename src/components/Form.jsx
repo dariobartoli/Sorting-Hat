@@ -67,6 +67,8 @@ export const Form = () => {
       return setResultado("¡HUFFLEPUFF!");
     }else if(ravenclaw.length > slytherin.length && ravenclaw.length > gryffindor.length && ravenclaw.length > hufflepuff.length){
       return setResultado("¡RAVENCLAW!");
+    }else{
+      return setResultado("SLYTHERIN")
     }
   }
 
@@ -329,8 +331,8 @@ export const Form = () => {
               <label htmlFor="k4">Escribe</label>
             </div>
             <div className='check__container'>
-              <input type="radio" name="opcion-k" id="k2" value="huf"/>
-              <label htmlFor="k2">Dibuja</label>
+              <input type="radio" name="opcion-k" id="k3" value="sly"/>
+              <label htmlFor="k3">Lo rompe en muchos pedacitos</label>
             </div>
           </fieldset>
         </form>
