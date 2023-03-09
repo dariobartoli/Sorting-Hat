@@ -128,12 +128,12 @@ input:checked + label{
 .image__modal{
     border-radius: 1rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 200px;
 }
 .image__modal3{
     border-radius: 1rem;
     width: 100%;
-    max-width: 300px;
+    max-width: 150px;
     box-shadow: 0px 1px 19px 5px rgba(0,0,0,0.47);
     -webkit-box-shadow: 0px 1px 19px 5px rgba(0,0,0,0.47);
     -moz-box-shadow: 0px 1px 19px 5px rgba(0,0,0,0.47);
@@ -211,6 +211,16 @@ input:checked + label{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width:600px) {
+    .image__modal{
+        max-width: 600px;
+    }
+    .image__modal3{
+        max-width: 300px;
+    }
+    
 }
 
 

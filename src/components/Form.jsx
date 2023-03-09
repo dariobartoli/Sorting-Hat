@@ -68,7 +68,7 @@ export const Form = () => {
     }else if(ravenclaw.length > slytherin.length && ravenclaw.length > gryffindor.length && ravenclaw.length > hufflepuff.length){
       return setResultado("¡RAVENCLAW!");
     }else{
-      return setResultado("SLYTHERIN")
+      return setResultado("¡SLYTHERIN!")
     }
   }
 
