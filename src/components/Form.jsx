@@ -68,7 +68,61 @@ export const Form = () => {
     }else if(ravenclaw.length > slytherin.length && ravenclaw.length > gryffindor.length && ravenclaw.length > hufflepuff.length){
       return setResultado("¡RAVENCLAW!");
     }else{
-      return setResultado("¡SLYTHERIN!")
+      if(gryffindor.length == slytherin.length && gryffindor.length > 0 && slytherin.length >0){
+        const random = Math.random().toFixed()
+        if(random == 0){
+          return setResultado("¡GRYFFINDOR!")
+        }else if(random == 1){
+          return setResultado("¡SLYTHERIN!")
+        }
+      }if(gryffindor.length == hufflepuff.length && gryffindor.length > 0 && hufflepuff.length >0){
+        const random = Math.random().toFixed()
+        if(random == 0){
+          return setResultado("¡GRYFFINDOR!")
+        }else if(random == 1){
+          return setResultado("¡HUFFLEPUFF!")
+        }
+      }if(gryffindor.length == ravenclaw.length && gryffindor.length > 0 && ravenclaw.length >0){
+        const random = Math.random().toFixed()
+        if(random == 0){
+          return setResultado("¡GRYFFINDOR!")
+        }else if(random == 1){
+          return setResultado("¡RAVENCLAW!")
+        }
+      }if(slytherin.length == hufflepuff.length && slytherin.length > 0 && hufflepuff.length >0){
+        const random = Math.random().toFixed()
+        if(random == 0){
+          return setResultado("¡HUFFLEPUFF!")
+        }else if(random == 1){
+          return setResultado("¡SLYTHERIN!")
+        }
+      }if(slytherin.length == ravenclaw.length && slytherin.length > 0 && ravenclaw.length >0){
+        const random = Math.random().toFixed()
+        if(random == 0){
+          return setResultado("¡RAVENCLAW!")
+        }else if(random == 1){
+          return setResultado("¡SLYTHERIN!")
+        }
+      }if(hufflepuff.length == ravenclaw.length && ravenclaw.length > 0 && hufflepuff.length >0){
+        const random = Math.random().toFixed()
+        if(random == 0){
+          return setResultado("¡RAVENCLAW!")
+        }else if(random == 1){
+          return setResultado("¡HUFFLEPUFF!")
+        }
+      }else{
+        const random = Math.random() * 3
+        const randomEntero = random.toFixed()
+        if(randomEntero == 0){
+          return setResultado("¡GRYFFINDOR!")
+        }if(randomEntero == 1){
+          return setResultado("¡SLYTHERIN!")
+        }if(randomEntero == 2){
+          return setResultado("¡HUFFLEPUFF!")
+        }if(randomEntero == 3){
+          return setResultado("¡RAVENCLAW!")
+        }
+      }
     }
   }
 
@@ -94,7 +148,7 @@ export const Form = () => {
             </div>
             <div className='check__container'>
               <input type="radio" name="opcion-a" id='a2' value="huf"/>
-              <label htmlFor="a2">Estudio un poquito cada día de la semana pero no me estreso porque sé que he parado bolas en clase entonces me va a ir bien</label>
+              <label htmlFor="a2">Estudio un poquito cada día de la semana pero no me estreso porque sé que he prestado atención en clase entonces me va a ir bien</label>
             </div>
             <div className='check__container'>
               <input type="radio" name="opcion-a" id='a3' value="rav"/>
